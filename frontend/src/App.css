@@ -1,0 +1,229 @@
+/* Variables */
+
+:root {
+    --background-color: #2b2d42;
+    --accent-color1: #be3e6d;
+    --accent-color2: #0087AE;
+    --main-font-color: #fbf5f8;
+    --body-font: "Helvetica", sans-serif;
+    --edge-margin: 40px;
+    --h1-font: 64px;
+    --h2-font: 36px;
+    --h3-font: 24px;
+    --p-font: 18px;
+    --default-font-size: 14px;
+  }
+  
+  /* Body */
+  
+  body {
+      font-family: var(--body-font);
+      line-height: 2.25em;
+      color: var(--main-font-color);
+      background-color: var(--background-color);
+      margin: var(--edge-margin);
+      padding: 0px;
+      text-align: center;
+      font-size: var(--default-font-siz);
+  }
+  
+  /* Universal Styling */
+  
+  .beet {
+    color: var(--accent-color1);
+  }
+  
+  /* App Header */
+  
+  .App-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .App-header div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App-header h1 {
+    font-size: var(--h1-font);
+    font-weight: bold;
+  }
+  
+  .App-header p {
+    align-self: center;
+    font-size: var(--p-font);
+    font-weight: bold;
+  }
+  
+  .App-logo {
+    align-self: center;
+    pointer-events: none;
+    height: 50px; 
+    width: 50px;
+    color: var(--accent-color2);
+    margin-right: 10px;
+  }
+  
+  
+  /* Navigation */
+  
+  .Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  
+  .Navigation ul {
+    list-style: none;
+  }
+  
+  .Navigation ul li {
+    display: inline-block;
+    margin: 20px 20px;
+  }
+  
+  .App-link {
+    text-decoration: none;
+    color: var(--accent-color2);
+    display: inline-block;
+    font-size: var(--h3-font);
+    font-weight: bold;
+  }
+  
+  .App-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-font-color);
+    text-underline-offset: 0.5em;
+  }
+  
+  /* Main */
+  
+  main {
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  main h2 {
+    font-size: var(--h2-font);
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .icon {
+    height: 50px; 
+    width: 50px;
+    color: var(--accent-color2);
+  }
+
+  a[href ='/create'] {
+    color: var(--accent-color2);
+    font-size: var(--h3-font);
+    text-decoration: none;
+  }
+
+  a[href ='/create']:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-font-color);
+    text-underline-offset: 0.5em;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Tables */
+  
+  table {
+    border-collapse:collapse;
+    align-self: center;
+    table-layout: auto;
+    width: 100%;
+    border: 2px solid var(--accent-color1);
+    margin: var(--edge-margin);
+  }
+  
+  caption {
+    font-weight:bold;
+    font-size: var(--h2-font);
+    margin: var(--edge-margin);
+  }
+  
+  
+  tr th {
+    padding: 20px;
+    font-size: var(--h3-font);
+    text-align:center;
+    color: var(--accent-color2);
+  }
+  
+  tr td {
+    text-align:center; 
+    border: 1px solid var(--accent-color1);
+    padding: 2px 8px 0;
+    text-align:center;
+    font-size: var(--p-font);
+  }
+  
+  /* Forms */
+  
+  
+  fieldset {
+    border: 1px solid var(--accent-color1);
+    margin: var(--edge-margin);
+    padding: var(--edge-margin);
+    color: var(--main-font-color);
+    display: inline-grid; 
+  }
+  
+  legend {
+    font-size: var(--h3-font);
+  
+  }
+  
+  label {
+    padding: 10px;
+    font-size: var(--p-font);
+    font-weight: bold;
+  
+  }
+  
+  input, select {
+    font-size: var(--p-font);
+    padding: 5px;
+  }
+  
+  button {
+    background-color: var(--background-color);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: var(--p-font);
+    color: var(--main-font-color);
+    font-family: var(--body-font);
+    padding: 10px;
+    margin-top: var(--edge-margin);
+    border-style: solid;
+    border-color:  var(--accent-color2);
+    font-weight: bold;
+  } 
+  
+  button:hover {
+    background-color: var(--accent-color2)
+  }
+    
